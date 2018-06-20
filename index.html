@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DnD Token Generator</title>
+</head>
+<body>
+<div class="col-sm-10 input-box">
+    <form>
+        <div class="col-sm-5 form-group">
+        <label for="imageUrl">Image URL</label>
+        <input type="text" id="imageUrl" class="form-control">
+        </div>
+        <div class="col-sm-1 form-group">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" min="1" class="form-control">
+        </div>
+        <div class="col-sm-2 form-group">
+            <label for="size">Size</label>
+            <select id="size" class="form-control">
+                <option>medium</option>
+                <option>large</option>
+            </select>
+        </div>
+        <div class="col-sm-2 form-group">
+        <input type="button" onclick="generateTokens()" value="Add Tokens" class="col-sm-12 btn btn-dark">
+        <input type="button" onclick="clearAndReset()" value="Clear" class="col-sm-12 btn btn-danger">
+        </div>
+    </form>
+</div>
+<div class="tokens" id="tokenSpace">
+</div>
+
+</body>
+<footer>
+    <script src="js/controller.js"></script>
+</footer>
+</html>
