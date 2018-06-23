@@ -16,7 +16,7 @@ function appendTokens(imageUrl, amount, size) {
 }
 
 function generateNewToken(imageUrl, size) {
-    var sizeClass = "medium";
+    let sizeClass = "medium";
     switch (size){
         case 'large':
             sizeClass = "large"
@@ -43,5 +43,12 @@ function clearAndReset() {
     amount.value = 1;
     let sizeElement = document.getElementById('size');
     sizeElement.selectedIndex = 0;
-
 }
+
+function printTokens() {
+    window.print();
+}
+
+//TODO: Feature request: export to file
+//TODO: Feature request: import to file
+//TODO: Feature request: remove single tokens

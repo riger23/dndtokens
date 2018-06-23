@@ -1,11 +1,19 @@
 .input-box {
-    margin: 2rem;
-    border: lightgrey solid 1px;
+    margin-top: 2rem;
+    border: #286090 solid 1px;
     border-radius: 15px;
     padding: 2rem;
-
 }
 
+@media print {
+    .input-box {
+        display: none;
+    }
+}
+
+.btn-primary {
+    margin-bottom: 1rem;
+}
 
 .tokens {
     margin-top: 5rem;
