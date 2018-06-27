@@ -56,10 +56,22 @@ function saveLocally(){
     let text = tokens.map(function (token) {
         return JSON.stringify(token);
     }).join();
-    let downloadAnchor = document.createElement('a');
-    downloadAnchor.setAttribute('href', 'data:text/plain;charset=utf-u,'+encodeURIComponent(text));
-    downloadAnchor.setAttribute('download', 'tokens.txt');
-    downloadAnchor.click()
+    
+    var a = document.createElement("a");
+    document.body.appendChild(a);
+
+    a.style = "display: none";
+
+    var json = text,
+        blob = new Blob([text], {type: "text/plain;charset=utf-8"}),
+        url = window.URL.createObjectURL(blob);
+
+    a.href = url;
+    a.download = "tokens.txt";
+    a.click();
+    window.URL.revokeObjectURL(url);
+
+
 }
 
 //TODO: Feature request: export to file
