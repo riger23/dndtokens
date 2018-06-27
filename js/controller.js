@@ -46,6 +46,8 @@ function clearAndReset() {
     amount.value = 1;
     let sizeElement = document.getElementById('size');
     sizeElement.selectedIndex = 0;
+    let importTokenField = document.getElementById('importTokenField');
+    importTokenField.value = "";
 }
 
 function printTokens() {
@@ -53,27 +55,38 @@ function printTokens() {
 }
 
 function saveLocally(){
-    let text = tokens.map(function (token) {
-        return JSON.stringify(token);
-    }).join();
+    let text = JSON.stringify(tokens); //tokens.map(function (token) {
+    //    return JSON.stringify(token);
+    //}).join();
     
     var a = document.createElement("a");
     document.body.appendChild(a);
 
     a.style = "display: none";
 
-    var json = text,
-        blob = new Blob([text], {type: "text/plain;charset=utf-8"}),
+    var blob = new Blob([text], {type: "text/plain;charset=utf-8"}),
         url = window.URL.createObjectURL(blob);
 
     a.href = url;
     a.download = "tokens.txt";
     a.click();
     window.URL.revokeObjectURL(url);
-
-
 }
 
-//TODO: Feature request: export to file
-//TODO: Feature request: import to file
+function importTokens(event){
+    clearAndReset();
+    let input = event.target;
+    let fileReader = new FileReader();
+    fileReader.onload = function () {
+        let text = fileReader.result;
+        let storedTokens = JSON.parse(text);
+
+        for(var i = 0; i < storedTokens.length; i++){
+            appendTokens(storedTokens[i].imageUrl, storedTokens[i].amount, storedTokens[i].size);
+        }
+    };
+    fileReader.readAsText(input.files[0]);
+}
+
+//TODO: Feature request: style the import
 //TODO: Feature request: remove single tokens

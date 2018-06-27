@@ -30,7 +30,12 @@
                 <input type="button" onclick="generateTokens()" value="Add Tokens" class="col-sm-12 btn btn-primary">
                 <input type="button" onclick="printTokens()" value="Print Tokens" class="col-sm-12 btn btn-primary">
                 <input type="button" onclick="saveLocally()" value="Save Tokens" class="col-sm-12 btn btn-primary">
+                <input type="button" onclick="importTokens()" value="Import Tokens" class="col-sm-12 btn btn-primary">
                 <input type="button" onclick="clearAndReset()" value="Clear" class="col-sm-12 btn btn-danger">
+            </div>
+            <div class="col-sm-12 form-group">
+                <input id="importTokenField" type="file" accept="text/plain" onchange="importTokens(event)">
+
             </div>
         </form>
     </div>
