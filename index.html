@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>DnD Token Generator</title>
 </head>
-<body>
+<body class="page-content-wrapper">
 <div class="container-fluid">
-    <div class="col-sm-6 col-sm-offset-3 input-box">
+    <div class="col-sm-12 header-box"><h1 class="text-center">Dungeons and Dragons Token Generator</h1></div>
+    <div class="col-sm-6 col-sm-offset-1 input-box">
         <form>
             <div class="col-sm-12 form-group">
                 <label for="imageUrl">Image URL</label>
@@ -40,11 +41,27 @@
             </div>
         </form>
     </div>
+    <div class="col-sm-3 col-sm-offset-1 help-box">
+        <h3 class="text-center">How to use this tool</h3>
+            <p class="text-left">Find an image of the monster from which you would want to create tokens and copy the
+                image URL into the "Image URL" field.</p>
+            <p class="text-left">Then choose how many tokens you need and what size they should be. Size "medium" means a
+                medium creature in the Dungeons and Dragons Universe and results in a 2.5cm wide printed token. Size
+                "large" means a large creature, being 5cm wide when printed.</p>
+            <p class="text-left">Generate the tokens by clicking "Add Token". After that, you can add tokens from another
+                image or print the tokens by clicking "Print Tokens".</p>
+            <p class="text-left">You can reset the tool by clicking "Clear All", which will remove all tokens too.</p>
+            <p class="text-left">For saving your work, you can download a text-file with all information needed to your
+                computer and re-import that later to continue.</p>
+
+    </div>
     <div class="col-sm-12 tokens" id="tokenSpace">
     </div>
 </div>
 </body>
-<footer>
+<footer class="col-sm-12">
+    <p class="text-center">Created by D. Mocher</br>Contact: dominik dot mocher at npluseins dot com
+    </br>The source code is available at <a href="https://bitbucket.org/Riger2311/dndtokens">Bitbucket</a> and is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.de.html">GNU GPLv3</a></p>
     <script src="js/controller.js"></script>
 </footer>
 </html>

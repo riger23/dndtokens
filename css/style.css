@@ -1,5 +1,48 @@
+@media print {
+    .input-box {
+        display: none;
+    }
+    .help-box {
+        display: none;
+    }
+    .header-box {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+}
 
+html {
+    position: relative;
+    min-height: 95%;
+}
+
+.page-content-wrapper {
+    margin-bottom: 2rem;
+}
+
+.header-box {
+
+}
+
+footer {
+    font-size: small;
+    position: absolute !important;
+    margin-top: 1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rem;
+}
 .input-box {
+    margin-top: 2rem;
+    border: #286090 solid 1px;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.help-box {
     margin-top: 2rem;
     border: #286090 solid 1px;
     border-radius: 15px;
@@ -10,11 +53,6 @@
     display: none;
 }
 
-@media print {
-    .input-box {
-        display: none;
-    }
-}
 
 .btn-primary {
     margin-bottom: 1rem;
