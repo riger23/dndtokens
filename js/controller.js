@@ -53,7 +53,7 @@ function printTokens() {
 
 function saveLocally(){
     let text = JSON.stringify(tokens);
-    
+
     var a = document.createElement("a");
     document.body.appendChild(a);
 
