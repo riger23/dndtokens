@@ -27,5 +27,5 @@ After that, you can connect to the server by entering the url `localhost:8080` i
 
 ## Bug Reports and Feature Requests
 
-If you want to report bugs, suggest a feature or simply want to say thanks, feel free to drop me a mail at dominik dot mocher at npluseins dot com.
+If you want to report bugs, suggest a feature or simply want to say thanks, feel free to drop me a mail at `dominik dot mocher at npluseins dot com`.
 Since I'm developing this in my leisure time, I do not provide any guarantees, warranties or similar, not even implied.
