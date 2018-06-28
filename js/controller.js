@@ -68,6 +68,11 @@ function saveLocally(){
     window.URL.revokeObjectURL(url);
 }
 
+function triggerImport() {
+    let importField = document.getElementById("importTokenField");
+    importField.click();
+}
+
 function importTokens(event){
     let input = event.target;
     let fileReader = new FileReader();
@@ -95,5 +100,4 @@ function clearInput(){
     importTokenField.value = "";
 }
 
-//TODO: Feature request: style the import
 //TODO: Feature request: remove single tokens

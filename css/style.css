@@ -1,8 +1,13 @@
+
 .input-box {
     margin-top: 2rem;
     border: #286090 solid 1px;
     border-radius: 15px;
     padding: 2rem;
+}
+
+#importTokenField {
+    display: none;
 }
 
 @media print {
