@@ -5,7 +5,7 @@ It creates tokens in the sizes medium (2.5cm wide), large (5cm wide)., huge (7.5
 
 ## Using the Token Generator
 
-The Token Generator is ready to use at https://dndtokens.herokuapp.com/index.html. 
+The Token Generator can be found [here](https://dndtokens-riger.b4a.run)
 
 ## Host it on your own Server
 
