@@ -23,6 +23,10 @@ function generateNewToken(imageUrl, size) {
     switch (size){
         case 'large':
             sizeClass = "large"
+        case 'huge':
+            sizeClass = "huge"
+        case 'gargantuan':
+            sizeClass = "gargantuan"
 
     }
     let image = document.createElement('img');

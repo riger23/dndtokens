@@ -1,7 +1,7 @@
 # Dungeons and Dragons Token Generator
 
 This is an tool to create Dungeons and Dragons tokens (which can also be used for other pen & paper games).
-It creates tokens in the sizes medium (2.5cm wide) and large (5cm wide). 
+It creates tokens in the sizes medium (2.5cm wide), large (5cm wide)., huge (7.5cm wide) and gargantuan (10cm wide).
 
 ## Using the Token Generator
 

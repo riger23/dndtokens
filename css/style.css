@@ -81,3 +81,11 @@ footer {
 .token-large {
     width: 5cm;
 }
+
+.token-huge {
+    width: 7.5cm;
+}
+
+.token-gargantuan {
+    width: 10cm;
+}
