@@ -72,6 +72,8 @@ footer {
     margin-right: 1px;
     margin-bottom: 1px;
     float: left;
+    display: flex;
+    justify-content: center;
 }
 
 .token-medium {
