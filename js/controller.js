@@ -22,11 +22,14 @@ function generateNewToken(imageUrl, size) {
     let sizeClass = "medium";
     switch (size){
         case 'large':
-            sizeClass = "large"
+            sizeClass = "large";
+            break;
         case 'huge':
             sizeClass = "huge"
+            break;
         case 'gargantuan':
             sizeClass = "gargantuan"
+            break;
 
     }
     let image = document.createElement('img');
